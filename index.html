@@ -3,168 +3,345 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Prasiddha Lamichhane</title>
-<meta name="description" content="Prasiddha Lamichhane, a computer science student in Kathmandu working on AI and backend projects.">
+<title>Prasiddha Lamichhane — AI &amp; Backend Developer</title>
+<meta name="description" content="Prasiddha Lamichhane is a third-year computer science student in Kathmandu specialising in artificial intelligence, with projects across retrieval systems, multi-agent tooling, computer vision and applied machine learning.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<main>
-
-  <h1>Prasiddha Lamichhane</h1>
-  <p class="sub">Computer science student in Kathmandu, mostly working on AI.</p>
-
-  <p>
-    I'm in my third year of a computer science degree at IIMS. Most of my time goes into
-    AI projects: retrieval systems, agents, a bit of computer vision. Most of what I know
-    I picked up by building things and then finding out what was wrong with them.
-  </p>
-
-  <p>
-    I'm looking for an internship where I can work on this sort of thing alongside people
-    who have been doing it longer than I have.
-  </p>
-
-  <p class="links">
-    <a href="mailto:prasiddha708@gmail.com">prasiddha708@gmail.com</a> ·
-    <a href="https://github.com/prasiddha42o">github.com/prasiddha42o</a> ·
-    <a href="tel:+9779869294409">+977 9869294409</a>
-  </p>
-
-
-  <h2>Projects</h2>
-
-  <div class="project">
-    <h3><a href="https://github.com/prasiddha42o/MyPocketLawyer-AI-Powered-Legal-Aid-Assistant">MyPocketLawyer</a></h3>
-    <p>
-      A question-answering assistant for Nepali law. It only answers from the ten statutes
-      I loaded into it, rewrites vague questions before searching, and cites the source it
-      used for every answer. I built it for the Fusemachines AI fellowship.
-    </p>
-    <p class="stack">Python, FastAPI, ChromaDB, Gemini, React</p>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="wordmark" href="#top">Prasiddha Lamichhane</a>
+    <nav class="topnav">
+      <a href="#about">About</a>
+      <a href="#work">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a class="btn btn-sm" href="mailto:prasiddha708@gmail.com">Email me</a>
+    </nav>
   </div>
+</header>
 
-  <div class="project">
-    <h3><a href="https://github.com/prasiddha42o/ai-coding-agent">AI coding agent</a></h3>
-    <p>
-      A coding assistant built out of several smaller agents. It reads a repository with
-      Tree-sitter to work out how it's laid out, then goes through a request in stages:
-      plan, write, review, test, commit. It shows you the plan first and doesn't touch a
-      file until you agree to it.
-    </p>
-    <p class="stack">Python, Tree-sitter</p>
-  </div>
+<main id="top">
 
-  <div class="project">
-    <h3><a href="https://github.com/prasiddha42o/capstone-project-51">Waste Assistant Nepal</a></h3>
-    <p>
-      Identifies a piece of waste from a photo and tells you how to dispose of it here in
-      Nepal. I merged more than ten public datasets into one, trained four CNN architectures
-      on it, and kept ResNet50, which reached 85.46% accuracy. This was my capstone.
-    </p>
-    <p class="stack">PyTorch, FastAPI, React</p>
-  </div>
+  <!-- Intro -->
+  <section class="wrap intro">
+    <div class="intro-photo">
+      <div class="avatar">
+        <span class="avatar-initials" aria-hidden="true">PL</span>
+        <img src="assets/prasiddha.jpg" alt="Prasiddha Lamichhane" width="360" height="360" onerror="this.remove()">
+      </div>
+    </div>
 
-  <div class="project">
-    <h3><a href="https://github.com/prasiddha42o/ai-inventory-platform">AI inventory platform</a></h3>
-    <p>
-      Works out reorder points and stockout risk from sales data. I compared five forecasting
-      models, then added SHAP explanations and a what-if simulator so you can see why a
-      number came out the way it did instead of just taking it.
-    </p>
-    <p class="stack">Next.js, FastAPI, MLflow, SHAP</p>
-  </div>
+    <div class="intro-text">
+      <p class="availability"><span class="dot" aria-hidden="true"></span> Available for internships</p>
+      <h1>Prasiddha Lamichhane</h1>
+      <p class="role">AI &amp; backend developer · Kathmandu, Nepal</p>
+      <p class="bio">
+        Third-year computer science student at IIMS, specialising in AI. I work on retrieval
+        systems, agent tooling and applied machine learning.
+      </p>
+      <div class="cta">
+        <a class="btn" href="mailto:prasiddha708@gmail.com">prasiddha708@gmail.com</a>
+        <a class="btn btn-quiet" href="https://github.com/prasiddha42o" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn btn-quiet" href="tel:+9779869294409">+977 9869294409</a>
+      </div>
+      <p class="facts">
+        Computer Science (Hons), IIMS &nbsp;·&nbsp; Fusemachines AI Fellow &nbsp;·&nbsp;
+        9 projects shipped &nbsp;·&nbsp; 4 certifications
+      </p>
+    </div>
+  </section>
 
-  <div class="project">
-    <h3><a href="https://github.com/prasiddha42o/docuvisionai">DocuVision AI</a></h3>
-    <p>
-      Reads invoices, receipts and purchase orders and gives back structured JSON. It sorts
-      the document by type, runs OCR, pulls out fields using the layout of the page, and
-      handles tables. Every field comes with a confidence score, and any correction you make
-      is kept for retraining later.
-    </p>
-    <p class="stack">Python, OCR</p>
-  </div>
+  <!-- About -->
+  <section class="wrap section" id="about">
+    <h2 class="section-title">About</h2>
+    <div class="card prose">
+      <p>
+        I learn by building. Most of what I know came from projects that didn't work the
+        first time, starting with a robot that ignored everything I planned for it.
+      </p>
+      <p>
+        My work now is mostly applied AI: retrieval, agents, computer vision. The common
+        thread is making the output checkable, through citations, confidence scores and SHAP.
+      </p>
+      <p class="prose-note">
+        Looking for an internship where I can work on production AI and get my code reviewed.
+      </p>
+    </div>
+  </section>
 
-  <div class="project">
-    <h3>PredictAI</h3>
-    <p>
-      Takes sensor readings from machines and predicts whether one is heading for a failure
-      and roughly how much life it has left. I benchmarked logistic regression, XGBoost,
-      isolation forest, an autoencoder and an LSTM against each other, and used SHAP to
-      explain individual predictions.
-    </p>
-    <p class="stack">Python, XGBoost, SHAP</p>
-  </div>
+  <!-- Projects -->
+  <section class="wrap section" id="work">
+    <h2 class="section-title">Selected projects</h2>
 
-  <div class="project">
-    <h3><a href="https://github.com/prasiddha42o/smart-resume-analyzer">Smart resume analyzer</a></h3>
-    <p>
-      Compares a resume against a job description and points out the keywords it's missing
-      and what could be improved.
-    </p>
-    <p class="stack">FastAPI, Streamlit, PostgreSQL</p>
-  </div>
+    <article class="card project">
+      <div class="project-head">
+        <h3>MyPocketLawyer</h3>
+        <span class="pill">Fusemachines AI Fellowship</span>
+      </div>
+      <p class="project-lede">
+        A retrieval assistant for questions about Nepali law.
+      </p>
+      <ul class="detail">
+        <li>Answers only from ten ingested statutes, always cited</li>
+        <li>Query rewriting for vague questions</li>
+        <li>Stateless, so nothing leaks between users</li>
+      </ul>
+      <div class="project-foot">
+        <ul class="tags">
+          <li>Python</li><li>FastAPI</li><li>ChromaDB</li><li>Google Gemini</li><li>React</li><li>shadcn/ui</li>
+        </ul>
+        <a class="repo" href="https://github.com/prasiddha42o/MyPocketLawyer-AI-Powered-Legal-Aid-Assistant" target="_blank" rel="noreferrer">View repository</a>
+      </div>
+    </article>
 
-  <div class="project">
-    <h3><a href="https://github.com/prasiddha42o/fastapi-inventorymanagement">Inventory management API</a></h3>
-    <p>
-      A small inventory system covering items, categories, stock levels and a statistics
-      page, with the API documentation generated from the code.
-    </p>
-    <p class="stack">FastAPI, SQLAlchemy, Streamlit</p>
-  </div>
+    <article class="card project">
+      <div class="project-head">
+        <h3>AI Coding Agent</h3>
+      </div>
+      <p class="project-lede">
+        A multi-agent assistant that makes reviewed, tested changes across a repository.
+      </p>
+      <ul class="detail">
+        <li>Maps the codebase with Tree-sitter before planning</li>
+        <li>Plan, generate, review, test, commit</li>
+        <li>Nothing is written until you approve the plan</li>
+      </ul>
+      <div class="project-foot">
+        <ul class="tags">
+          <li>Python</li><li>Tree-sitter</li><li>Multi-agent orchestration</li>
+        </ul>
+        <a class="repo" href="https://github.com/prasiddha42o/ai-coding-agent" target="_blank" rel="noreferrer">View repository</a>
+      </div>
+    </article>
 
-  <div class="project">
-    <h3>Obstacle avoiding bot</h3>
-    <p>
-      A robot that drives around and steers away from whatever is in front of it. A social
-      innovation project, and the first thing I made that had to work in the physical world,
-      which turned out to be a very different problem.
-    </p>
-  </div>
+    <article class="card project">
+      <div class="project-head">
+        <h3>Waste Assistant Nepal</h3>
+        <span class="pill">Capstone</span>
+      </div>
+      <p class="project-lede">
+        Identifies waste from a photo and gives disposal guidance for Nepal.
+      </p>
+      <ul class="detail">
+        <li>Ten-plus public datasets merged into one training set</li>
+        <li>Four CNNs benchmarked; ResNet50 at <strong>85.46%</strong> accuracy</li>
+        <li>FastAPI backend, React frontend</li>
+      </ul>
+      <div class="project-foot">
+        <ul class="tags">
+          <li>Python</li><li>PyTorch</li><li>ResNet50</li><li>FastAPI</li><li>React</li>
+        </ul>
+        <a class="repo" href="https://github.com/prasiddha42o/capstone-project-51" target="_blank" rel="noreferrer">View repository</a>
+      </div>
+    </article>
 
+    <article class="card project">
+      <div class="project-head">
+        <h3>AI Inventory Platform</h3>
+      </div>
+      <p class="project-lede">
+        Turns sales data into reorder points and stockout risk.
+      </p>
+      <ul class="detail">
+        <li>Five forecasting models benchmarked</li>
+        <li>SHAP explanations and what-if simulation</li>
+        <li>Experiment tracking in MLflow</li>
+      </ul>
+      <div class="project-foot">
+        <ul class="tags">
+          <li>Next.js</li><li>FastAPI</li><li>MLflow</li><li>SHAP</li>
+        </ul>
+        <a class="repo" href="https://github.com/prasiddha42o/ai-inventory-platform" target="_blank" rel="noreferrer">View repository</a>
+      </div>
+    </article>
 
-  <h2>Tools I use</h2>
-  <p>
-    Python, FastAPI, SQLAlchemy, PostgreSQL, PyTorch, Streamlit, React, Next.js, ChromaDB,
-    MLflow, SHAP, XGBoost, Git. Some AWS, some NLP, some OCR.
-  </p>
+    <article class="card project">
+      <div class="project-head">
+        <h3>DocuVision AI</h3>
+      </div>
+      <p class="project-lede">
+        Turns invoices, receipts and purchase orders into structured JSON.
+      </p>
+      <ul class="detail">
+        <li>Classification, OCR, layout-aware extraction, tables</li>
+        <li>Per-field confidence scoring</li>
+        <li>Corrections feed future retraining</li>
+      </ul>
+      <div class="project-foot">
+        <ul class="tags">
+          <li>Python</li><li>OCR</li><li>Layout-aware extraction</li>
+        </ul>
+        <a class="repo" href="https://github.com/prasiddha42o/docuvisionai" target="_blank" rel="noreferrer">View repository</a>
+      </div>
+    </article>
 
+    <article class="card project">
+      <div class="project-head">
+        <h3>PredictAI</h3>
+      </div>
+      <p class="project-lede">
+        Predictive maintenance on streaming sensor data.
+      </p>
+      <ul class="detail">
+        <li>Health status, failure probability, remaining useful life</li>
+        <li>Five model families benchmarked</li>
+        <li>Every prediction explained with SHAP</li>
+      </ul>
+      <div class="project-foot">
+        <ul class="tags">
+          <li>Python</li><li>XGBoost</li><li>LSTM</li><li>Autoencoders</li><li>SHAP</li>
+        </ul>
+      </div>
+    </article>
 
-  <h2>Education</h2>
-  <p>
-    <strong>Bachelor in Computer Science (Hons)</strong><br>
-    IIMS, Kathmandu. September 2023 to now.
-  </p>
+    <h2 class="section-title sub">Also built</h2>
+    <div class="grid">
+      <article class="card small">
+        <h3>Smart Resume Analyzer</h3>
+        <p>
+          Checks a resume against a job description and flags missing keywords.
+        </p>
+        <ul class="tags">
+          <li>FastAPI</li><li>Streamlit</li><li>PostgreSQL</li>
+        </ul>
+        <a class="repo" href="https://github.com/prasiddha42o/smart-resume-analyzer" target="_blank" rel="noreferrer">View repository</a>
+      </article>
 
+      <article class="card small">
+        <h3>Inventory Management API</h3>
+        <p>
+          CRUD, stock tracking and a stats dashboard, with generated OpenAPI docs.
+        </p>
+        <ul class="tags">
+          <li>FastAPI</li><li>SQLAlchemy</li><li>Streamlit</li>
+        </ul>
+        <a class="repo" href="https://github.com/prasiddha42o/fastapi-inventorymanagement" target="_blank" rel="noreferrer">View repository</a>
+      </article>
 
-  <h2>Courses</h2>
-  <ul>
-    <li>Microdegree in Artificial Intelligence. Fusemachines, 2025</li>
-    <li>Introduction to Natural Language Processing. Analytics Vidhya, 2025</li>
-    <li>Python for Beginners. OpenCV University, 2025</li>
-    <li>AWS Cloud Practitioner Essentials. Amazon Web Services, 2023</li>
-  </ul>
+      <article class="card small">
+        <h3>Obstacle Avoiding Bot</h3>
+        <p>
+          An autonomous robot that steers around obstacles. My first hardware project.
+        </p>
+        <ul class="tags">
+          <li>Robotics</li><li>Sensors</li>
+        </ul>
+      </article>
+    </div>
+  </section>
 
+  <!-- Skills -->
+  <section class="wrap section" id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="card">
+      <div class="skillset">
+        <div class="skillgroup">
+          <h3>Machine learning</h3>
+          <ul class="tags">
+            <li>PyTorch</li><li>CNNs</li><li>ResNet50</li><li>LSTM</li><li>Autoencoders</li>
+            <li>XGBoost</li><li>Isolation Forest</li><li>SHAP</li><li>MLflow</li>
+          </ul>
+        </div>
+        <div class="skillgroup">
+          <h3>AI systems</h3>
+          <ul class="tags">
+            <li>RAG</li><li>Vector search</li><li>ChromaDB</li><li>Google Gemini</li>
+            <li>Multi-agent design</li><li>Tree-sitter</li><li>NLP</li><li>OCR</li>
+          </ul>
+        </div>
+        <div class="skillgroup">
+          <h3>Backend</h3>
+          <ul class="tags">
+            <li>Python</li><li>FastAPI</li><li>SQLAlchemy</li><li>PostgreSQL</li>
+            <li>REST</li><li>OpenAPI</li>
+          </ul>
+        </div>
+        <div class="skillgroup">
+          <h3>Frontend &amp; tooling</h3>
+          <ul class="tags">
+            <li>React</li><li>Next.js</li><li>shadcn/ui</li><li>Streamlit</li>
+            <li>Git</li><li>AWS fundamentals</li>
+          </ul>
+        </div>
+      </div>
 
-  <h2>Languages</h2>
-  <p>Nepali (native), English, Hindi.</p>
+      <div class="langs">
+        <h3>Languages</h3>
+        <ul>
+          <li><span>Nepali</span><em>Native</em></li>
+          <li><span>English</span><em>Professional working</em></li>
+          <li><span>Hindi</span><em>Conversational</em></li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
+  <!-- Education -->
+  <section class="wrap section" id="education">
+    <h2 class="section-title">Education &amp; certifications</h2>
 
-  <h2>Get in touch</h2>
-  <p>
-    Email is the surest way to reach me:
-    <a href="mailto:prasiddha708@gmail.com">prasiddha708@gmail.com</a>.
-    My code is on <a href="https://github.com/prasiddha42o">GitHub</a>, and I'm in Basbari,
-    Bhaktapur.
-  </p>
+    <div class="card">
+      <div class="edu-head">
+        <div>
+          <h3>Bachelor in Computer Science (Hons)</h3>
+          <p class="muted">IIMS, Kathmandu</p>
+        </div>
+        <span class="pill">September 2023 – present</span>
+      </div>
+      <p class="edu-body">
+        Four-year programme covering programming, algorithms, databases and systems, with
+        electives in AI, cybersecurity and data science.
+      </p>
+    </div>
 
-  <footer>
-    <p>Prasiddha Lamichhane, <span id="year">2026</span>. Plain HTML and CSS, no framework.</p>
-  </footer>
+    <div class="grid certs">
+      <div class="card small">
+        <h3>Microdegree in Artificial Intelligence</h3>
+        <p class="muted">Fusemachines, 2025</p>
+      </div>
+      <div class="card small">
+        <h3>Introduction to Natural Language Processing</h3>
+        <p class="muted">Analytics Vidhya, 2025</p>
+      </div>
+      <div class="card small">
+        <h3>Python for Beginners</h3>
+        <p class="muted">OpenCV University, 2025</p>
+      </div>
+      <div class="card small">
+        <h3>AWS Cloud Practitioner Essentials</h3>
+        <p class="muted">Amazon Web Services, 2023</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="wrap section" id="contact">
+    <h2 class="section-title">Get in touch</h2>
+    <div class="card contact">
+      <div>
+        <h3>Open to internships and collaborations</h3>
+        <p class="muted">
+          Email is the best way to reach me. Based in Basbari, Bhaktapur.
+        </p>
+      </div>
+      <div class="contact-actions">
+        <a class="btn" href="mailto:prasiddha708@gmail.com">prasiddha708@gmail.com</a>
+        <a class="btn btn-quiet" href="https://github.com/prasiddha42o" target="_blank" rel="noreferrer">github.com/prasiddha42o</a>
+      </div>
+    </div>
+  </section>
 
 </main>
+
+<footer class="wrap foot">
+  <p>Prasiddha Lamichhane, <span id="year">2026</span></p>
+  <p><a href="mailto:prasiddha708@gmail.com">Email</a> · <a href="https://github.com/prasiddha42o" target="_blank" rel="noreferrer">GitHub</a></p>
+</footer>
 
 <script src="script.js"></script>
 </body>
